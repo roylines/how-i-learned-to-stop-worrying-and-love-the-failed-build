@@ -1,4 +1,3 @@
-how-i-learned-to-stop-worrying-and-love-the-failed-build
-========================================================
+# How I Learned to Stop Worrying and Love the Failed Build
 
-a talk on continuous deployment
+A talk on continuous deployment by Roy Lines.

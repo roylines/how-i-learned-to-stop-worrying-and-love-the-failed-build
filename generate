@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mdpress ./html.md
+tidy -im html/index.html
+rsync -a html/ .
+rm -r html
