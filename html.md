@@ -6,15 +6,34 @@
 
 <img width="70%" src="img/strglve.jpg"/>
 
-## A talk on continuous deployment
-## by Roy Lines
+_A talk on continuous deployment by Roy Lines_
 </center>
 
 ---
 = data-x="1000" data-scale="2" id=about
 
 <center>
-# A bit about me...
+
+## A little bit about me...
+
+<img width="30%" src="img/me.jpg"/>
+
+</center>
+
+---
+= data-x="1000" data-scale="2" id=times
+
+<center>
+## Release Cycle Times in Months
+<img width="80%" src="img/releases.png"/>
+</center>
+
+---
+= data-x="1000" data-scale="2" id=manifesto
+
+<center>
+> "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software." - agile manifesto 2001 AD
+ 
 </center>
 
 ---
