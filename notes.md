@@ -5,23 +5,37 @@
 
 
 # History of release times
-1994-1998 - GPT - 2 year release cycle
-1998-2002 - AIT - < 1 year
-2002-2008 - 1 month
-2008-2012 - 2 week (SCRUM)
-NOW - many a day
+In my lifetime releases have sped up. 
+In 1996 the company I worked for had a release time of 2 years. 
+It was a long drawn out waterfall process. Manual builds, manual tests, sign-off.
+By 2000 we were down to yearly releases. Still waterfall, still manual builds and large integration points.
+Agile manifesto was published in 2001, and by 2003 release times were down to 1 month, then every 2 weeks through 2009 to 2012
 
-[GRAPH]
+- releases speeded up.
+- waterfall -> agile
 
 # Agile Manifesto
 "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."
 Agile Manifesto 2001 AD
 
-# Jez and David Publish book
-READ BOOK
+The two week release cycle was largely an artifact of scrum and two week iterations, and frankly this felt pretty good. 
+By now CI servers were an essential part of the process and Id got into the habit of measuring things: code quality and complexity, coverage.
 
+# Jez and David Publish book
+In 2010 Jez Humble and David Farley of Thoughtworks published : Continuous Delivery
+
+Firstly the book is called Continuous Delivery, but actually the most enlightening part for me is the concept of Continuous Deployment.
+"Software release can - and should - be a low-risk, frequent, cheap, rapid and predictable process"
+
+Continuous deployment is the logical extension of Continuous Integration covering more than just software development
+Reduce cycle time: the time it takes from deciding to make a change to having it available for users.
+
+"Find ways to deliver high-quality, valuable software in an efficient, fast and reliable manner"
+- low cycle time
+- high quality
 
 ## Continuous Deployment 
+What are the steps to continuous deployment
 
 Steps to CD
 - Deployment must be repeatable and reliable
@@ -40,6 +54,7 @@ Best Practices:
 - Failure stops the pipeline
 - Don't patch
 
+ Key to it all is the deployment pipeline
 
 
 

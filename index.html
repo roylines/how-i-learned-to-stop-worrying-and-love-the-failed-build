@@ -1,106 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="en">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
-  <link href="css/reset.css" rel="stylesheet" type="text/css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1024">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="css/favicon.png">
-  <link rel="apple-touch-icon" href="css/apple-touch-icon.png">
-  <!-- Code Prettifier: -->
-  <link href="css/highlight.css" type="text/css" rel="stylesheet">
-  <script type="text/javascript" src="js/highlight.pack.js">
-</script>
-  <script type="text/javascript">
-hljs.initHighlightingOnLoad();
-  </script>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href=
-  'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800'
-  rel='stylesheet' type='text/css'>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>How I learned to stop worrying and love the failed build - A talk on continuous delivery by Roy Lines</title>
 
-  <title></title>
+<meta name="author" content="Roy Lines" />
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>
+
+<link href="css/style.css" rel="stylesheet" />
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
-<body>
-  <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by
-    impress.js, so you are presented with a simplified version of
-    this presentation.</p>
+<body class="impress-not-supported">
 
-    <p>For the best experience please use the latest <b>Chrome</b>,
-    <b>Safari</b> or <b>Firefox</b> browser.</p>
+<div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+  <div class='step' data-x="0" data-scale="2" id="title">
+    <h2><strong>How I Learned to Stop Worrying</strong></h2>
+    <h2><strong>and Love the Failed Build</strong></h2>
+
+    <p><img width="70%" alt="Doctor Strangelove" src="img/strglve.jpg"/></p>
+
+    <p><em>A talk on continuous deployment by Roy Lines</em></p>
+  </div>
+  <div class='step' data-x="2000" data-scale="2" id="about">
+    <h2>A little bit about me...</h2>
+
+    <p><img width="30%" alt="Roy" src="img/me.jpg"></p>
   </div>
 
-  <div id="impress">
-    <div class='step' data-x="1000" data-scale="2" id="title">
-      <center>
-        <h2><strong>How I Learned to Stop Worrying</strong></h2>
+  <div class='step' data-x="4000" data-scale="2" id="times">
+    <h2>Release Cycle Times in Months</h2>
 
-        <h2><strong>and Love the Failed Build</strong></h2>
+    <p><img width="80%" alt="chart showing release cycle times" src="img/releases.png"></p>
+  </div>
 
-        <p><img width="70%" src="img/strglve.jpg"></p>
+  <div class='step' data-x="6000" data-scale="2" id="manifesto">
+    <blockquote>
+      <p>"Our highest priority is to satisfy the customer
+      through early and continuous delivery of valuable
+      software." - agile manifesto 2001 AD</p>
+    </blockquote>
+  </div>
 
-        <p><em>A talk on continuous deployment by Roy
-        Lines</em></p>
-      </center>
-    </div>
-
-    <div class='step' data-x="1000" data-scale="2" id="about">
-      <center>
-        <h2>A little bit about me...</h2>
-
-        <p><img width="30%" src="img/me.jpg"></p>
-      </center>
-    </div>
-
-    <div class='step' data-x="1000" data-scale="2" id="times">
-      <center>
-        <h2>Release Cycle Times in Months</h2>
-
-        <p><img width="80%" src="img/releases.png"></p>
-      </center>
-    </div>
-
-    <div class='step' data-x="1000" data-scale="2" id="manifesto">
-      <center>
-        <blockquote>
-          <p>"Our highest priority is to satisfy the customer
-          through early and continuous delivery of valuable
-          software." - agile manifesto 2001 AD</p>
-        </blockquote>
-      </center>
-    </div>
-
-    <div class='step' data-x="1000" data-scale="2" id=
+  <div class='step' data-x="8000" data-scale="2" id=
     "continuous-delivery">
-      <center>
-        <img src="img/continuous-delivery.jpg">
+    <img alt="continuous delivery book" src="img/continuous-delivery.jpg">
+  </div>
 
-        <h2>Whatever you do read this</h2>
-      </center>
-    </div>
+  <div class='step' data-x="10000" data-scale="2" id=
+    "continuous-delivery-quotes">
+    <img width="20%" alt="continuous delivery book" src="img/continuous-delivery.jpg">
 
-    <div class='step' data-x="1000" data-scale="2" id="thanks">
-      <center>
-        <h1>Thanks!</h1>
+    <blockquote>
+      <p>"Software release can - and should - be a low-risk,
+      frequent, cheap, rapid and predictable process."</p>
 
-        <h3>@roylinesuk</h3>
+      <p>"Find ways to deliver high-quality, valuable software
+      in an efficient, fast and reliable manner."</p>
+    </blockquote>
+  </div>
 
-        <h3><a href=
+  <div class='step' data-x="12000" data-scale="2" id="pipeline">
+    <h2>The Pipeline</h2>
+
+    <p>Commit</p>
+
+    <p>Acceptance</p>
+
+    <p>User Acceptance</p>
+
+    <p>Publish</p>
+
+    <p>Smoke</p>
+  </div>
+
+  <div class='step' data-x="6000" data-y="5000" data-scale="20" id="thanks">
+    <h1>Thanks!</h1>
+
+    <h3>@roylinesuk</h3>
+
+    <h3><a href=
         "http://roylines.co.uk">http://roylines.co.uk</a></h3>
 
-        <p><strong><em><a href=
-        "http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build">
-        http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build</a></em></strong></p>
-      </center>
-    </div><script src="js/impress.js" type="text/javascript">
-</script> <script type="text/javascript">
-impress().init();
-    </script>
+    <p><strong><em><a href=
+          "http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build">
+          http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build</a></em></strong></p>
   </div>
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
 </body>
 </html>
+

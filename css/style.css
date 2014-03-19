@@ -31,6 +31,7 @@ body {
 	-ms-transition: opacity 1s;
 	-o-transition: opacity 1s;
 	transition: opacity 1s;
+  text-align: center;
 }
 
 .impress-enabled .step {
@@ -207,4 +208,8 @@ span,strong {
 	-ms-transition-delay: 0.5s;
 	-o-transition-delay: 0.5s;
 	transition-delay: 0.5s;
+}
+
+blockquote {
+  text-align: center;
 }
