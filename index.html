@@ -1,76 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=1024" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<title>How I learned to stop worrying and love the failed build - A talk on continuous delivery by Roy Lines</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="Roy Lines">
 
-<meta name="author" content="Roy Lines" />
-
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>
-
-<link href="css/style.css" rel="stylesheet" />
-
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<title>How I learned to stop worrying and love the failed build -  A talk on continuous delivery by Roy Lines</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 
 <body class="impress-not-supported">
-
 <div class="fallback-message">
   <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>,
+  <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
 <div id="impress">
-  <div class='step' data-x="0" data-scale="2" id="title">
-    <h2><strong>How I Learned to Stop Worrying</strong></h2>
-    <h2><strong>and Love the Failed Build</strong></h2>
-
-    <p><img width="70%" alt="Doctor Strangelove" src="img/strglve.jpg"/></p>
-
+  <div id="title" class='step' data-x="0" data-scale="2">
+    <h2>How I Learned to Stop Worrying</h2>
+    <h2>and Love the Failed Build</h2>
+    <img width="70%" alt="Doctor Strangelove" src="img/strglve.jpg">
     <p><em>A talk on continuous deployment by Roy Lines</em></p>
   </div>
-  <div class='step' data-x="2000" data-scale="2" id="about">
+
+  <div id="about" class='step' data-x="2000" data-scale="2">
     <h2>A little bit about me...</h2>
-
-    <p><img width="30%" alt="Roy" src="img/me.jpg"></p>
+    <img width="30%" alt="Roy" src="img/me.jpg">
   </div>
 
-  <div class='step' data-x="4000" data-scale="2" id="times">
+  <div id="times" class='step' data-x="4000" data-scale="2">
     <h2>Release Cycle Times in Months</h2>
-
-    <p><img width="80%" alt="chart showing release cycle times" src="img/releases.png"></p>
+    <img width="80%" alt="chart showing release cycle times" src="img/releases.png">
   </div>
 
-  <div class='step' data-x="6000" data-scale="2" id="manifesto">
+  <div id="manifesto" class='step' data-x="6000" data-scale="2">
     <blockquote>
-      <p>"Our highest priority is to satisfy the customer
-      through early and continuous delivery of valuable
-      software." - agile manifesto 2001 AD</p>
+      "Our highest priority is to satisfy the customer through
+      early and continuous delivery of valuable software." -
+      agile manifesto 2001 AD
     </blockquote>
   </div>
 
-  <div class='step' data-x="8000" data-scale="2" id=
-    "continuous-delivery">
+  <div id="continuous-delivery" class='step' data-x="8000" data-scale="2">
     <img alt="continuous delivery book" src="img/continuous-delivery.jpg">
   </div>
 
-  <div class='step' data-x="8000" data-scale="0.5" id=
-    "continuous-delivery-quotes">
+  <div id="continuous-delivery-quotes" class='step' data-x="8000" data-scale="0.5">
     <blockquote>
-      <p>"Software release can - and should - be a low-risk,
-      frequent, cheap, rapid and predictable process."</p>
+      "Software release can - and should - be a low-risk,
+      frequent, cheap, rapid and predictable process."
 
-      <p>"Find ways to deliver high-quality, valuable software
-      in an efficient, fast and reliable manner."</p>
+      "Find ways to deliver high-quality, valuable software in
+      an efficient, fast and reliable manner."
     </blockquote>
   </div>
 
-  <div class='step' data-x="12000" data-scale="2" id="pipeline">
+  <div id="pipeline" class='step' data-x="12000" data-scale="2">
     <h2>The Pipeline</h2>
 
     <p>Commit</p>
@@ -84,23 +76,18 @@
     <p>Smoke</p>
   </div>
 
-  <div class='step' data-x="6000" data-y="5000" data-scale="20" id="thanks">
+  <div id="thanks" class='step' data-x="6000" data-y="5000" data-scale="20">
     <h1>Thanks!</h1>
 
     <h3>@roylinesuk</h3>
 
-    <h3><a href=
-        "http://roylines.co.uk">http://roylines.co.uk</a></h3>
+    <h3><a href="http://roylines.co.uk">http://roylines.co.uk</a></h3>
 
-    <p><strong><em><a href=
-          "http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build">
-          http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build</a></em></strong></p>
+    <a href="http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build">http://roylines.co.uk/how-i-learned-to-stop-worrying-and-love-the-failed-build</a>
   </div>
-</div>
-
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
-
+</div><script src="js/impress.js" type="text/javascript">
+</script><script type="text/javascript">
+impress().init();
+</script>
 </body>
 </html>
-
