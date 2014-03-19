@@ -228,3 +228,10 @@ blockquote > cite {
   text-align: right;
 }
 
+img {
+  width: 80%;
+}
+
+img.portrait {
+  width: 30%;
+}
