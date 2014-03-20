@@ -23,96 +23,154 @@
 </div>
 
 <div id="impress">
-  <div id="title" class='step' data-x="0" data-scale="2">
-    <h2>How I Learned to Stop Worrying</h2>
-    <h2>and Love the Failed Build</h2>
+  <div id="title" class='step' data-x="2000" data-scale="2">
+    <h1>How I Learned to Stop Worrying and Love the Failed Build</h1>
     <img alt="Doctor Strangelove" src="img/strglve.jpg">
-    <p><em>A talk on continuous deployment by Roy Lines</em></p>
+    <h2>A talk on continuous deployment</h2>
+    <h2><a href="roylines.co.uk">Roy Lines</a></h2>
   </div>
 
   <div id="about" class='step' data-x="2000" data-scale="2">
-    <h2>A little bit about me...</h2>
+    <h1>A little bit about me</h1>
     <img class="portrait" alt="Roy" src="img/me.jpg">
   </div>
 
-  <div id="times" class='step' data-x="4000" data-scale="2">
-    <h2>Release Cycle Times in Months</h2>
+  <div id="times" class='step' data-x="2000" data-scale="2">
+    <h1>Release Cycle Times in Months</h1>
     <img width="80%" alt="chart showing release cycle times" src="img/releases.png">
   </div>
 
-  <div id="manifesto" class='step' data-x="6000" data-scale="2">
-    <blockquote>
-      Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
-      <cite> - agile manifesto 2001 AD</cite>
-    </blockquote>
+  <div id="how-we-used-to-do-it" class='step' data-x="2000" data-scale="2">
+    <h1>Deploying Like It's 1999</h1>
+    <h2>Spend time writing code</h2>
+    <h2>Merge it, probably several times</h2>
+    <h2>Hand it over to someone to deploy</h2>
+    <h2>Try and roll back the deploy</h2>
+    <h2>Start again</h2>
   </div>
 
-  <div id="continuous-delivery" class='step' data-x="8000" data-scale="2">
+  <div id="continuous-delivery" class='step' data-x="2000" data-scale="2">
     <img class="portrait" alt="continuous delivery book" src="img/continuous-delivery.jpg">
   </div>
 
-  <div id="continuous-delivery-quotes" class='step' data-x="8000" data-scale="0.5">
+  <div id="continuous-delivery-goals" class='step' data-x="2000" data-scale="2">
     <blockquote>
-      <p>Software release can - and should - be a low-risk, frequent, cheap, rapid and predictable process.</p>
-      <p>Find ways to deliver high-quality, valuable software in an efficient, fast and reliable manner.</p>
+      <p>... reduce cycle time, the time it takes from deciding to make a change ... to having it available to users.</p>
       <cite> - Jez Humble and David Farley 2006</cite>    
     </blockquote>
   </div>
 
-  <div id="repeatable" class='step' data-x="8000" data-scale="2">
+  <div id="manifesto" class='step' data-x="2000" data-scale="2">
+    <blockquote>
+      Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+      <cite> - Agile Manifesto 2001 AD</cite>
+    </blockquote>
+  </div>
+
+  <div id="principles" class='step' data-x="2000" data-scale="2">
+    <h1>The Principles of Continuous Deployment</h1>
+  </div>
+
+  <div id="repeatable" class='step' data-x="2000" data-scale="2">
     <img alt="groundhog day clock" src="img/groundhog-day.jpg">
-    <h2>repeatable and reliable</h2>
+    <h1>repeatable and reliable</h1>
   </div>
 
-  <div id="no-manual" class='step' data-x="8000" data-scale="2">
+  <div id="no-manual" class='step' data-x="2000" data-scale="2">
     <img alt="Professor Butts and the Self-Operating Napkin - Rube Goldberg " src="img/rube-goldberg.jpg">
-    <h2>Automate everything</h2>
+    <h1>Automate everything</h1>
   </div>
-  
-  <div id="hurts" class='step' data-x="8000" data-scale="2">
+
+  <div id="hurts" class='step' data-x="2000" data-scale="2">
     <img alt="Wile E Coyote blowing up" src="img/wile-e-coyote.jpg">
-    <h2>If it hurts do it more often</h2>
+    <h1>If it hurts do it more often</h1>
   </div>
-  
-  <div id="source-control" class='step' data-x="8000" data-scale="2">
+
+  <div id="source-control" class='step' data-x="2000" data-scale="2">
     <img class="portrait" alt="github octocat" src="img/octocat.png">
-    <h2>Keep everything in source control</h2>
+    <h1>Keep everything in source control</h1>
+  </div>
+
+  <div id="measure" class='step' data-x="2000" data-scale="2">
+    <img alt="tape measure" src="img/measure.jpg">
+    <h1>measure, measure, measure</h1>
+  </div>
+
+  <div id="responsibility" class='step' data-x="2000" data-scale="2">
+    <img class="portrait" alt="responsibility" src="img/responsibility.jpg">
+    <h1>Everybody is responsible for the release process</h1>
+  </div>
+
+  <div id="improve" class='step' data-x="2000" data-scale="2">
+    <img class="portrait" alt="responsibility" src="img/improve.jpg">
+    <h1>Continuously improve</h1>
+  </div>
+
+  <div id="deployment-pipeline" class='step' data-x="2000" data-scale="2">
+    <h1>The Deployment Pipeline</h1>
+  </div>
+
+  <div id="a-deployment-pipeline" class='step' data-x="2000" data-scale="2">
+    <blockquote>
+      <p>A deployment pipeline is, in essence, an automated implementation of your application's build, deploy, test and release process</p>
+      <cite> - Jez Humble and David Farley 2006</cite>    
+    </blockquote>
+  </div>
+
+  <div id="our-deployment-pipeline" class='step' data-x="2000" data-scale="2">
+    <h1>Our (Server) Deployment Pipeline</h1>
+    <h2>Commit</h2>
+    <h2>Acceptance</h2>
+    <h2>Publish</h2>
+    <h2>Smoke</h2>
+  </div>
+
+  <div id="commit-phase" class="step" data-x="2000" data-scale="2">
+    <h1>Commit</h1>
+    <h2>Unit Tests</h2>
+    <h2>Quality Checks</h2>
   </div>
   
-  <div id="measure" class='step' data-x="8000" data-scale="2">
-    <h2>measure, measure, measure</h2>
+  <div id="acceptance-phase" class="step" data-x="2000" data-scale="2">
+    <h1>Acceptance</h1>
+    <h2>Performance Tests</h2>
+    <h2>Database Tests</h2>
   </div>
   
-  <div id="responsibility" class='step' data-x="8000" data-scale="2">
-    <h2>Everybody is responsible for the release process</h2>
+  <div id="deploy-phase" class="step" data-x="2000" data-scale="2">
+    <h1>Deploy</h1>
+    <h2>Deploys Code</h2>
+    <h2>Checks Running Version</h2>
   </div>
   
-  <div id="improve" class='step' data-x="8000" data-scale="2">
-    <h2>Continuously improve</h2>
+  <div id="smoke-phase" class="step" data-x="2000" data-scale="2">
+    <h1>Smoke</h1>
+    <h2>Web Service Testing</h2>
+    <h2>User Interface Testing</h2>
+  </div>
+  
+  <div id="why-love-failed-build" class='step' data-x="2000" data-scale="2">
+    <img alt="Doctor Strangelove" src="img/strglve.jpg">
+    <h1>So why have I learned to stop worrying and love the failed build ?</h1>
+  </div>
+  
+  <div id="go-to-lunch" class='step' data-x="2000" data-scale="2">
+    <blockquote>
+      <p>Let's push to master, and go to lunch whilst it deploys to production</p>
+      <cite> - Roy Lines 2014</cite>    
+    </blockquote>
   </div>
 
-  <div id="pipeline" class='step' data-x="12000" data-scale="2">
-    <h2>The Pipeline</h2>
-
-    <p>Commit</p>
-
-    <p>Acceptance</p>
-
-    <p>User Acceptance</p>
-
-    <p>Publish</p>
-
-    <p>Smoke</p>
-  </div>
-
-  <div id="thanks" class='step' data-x="6000" data-y="5000" data-scale="20">
-    <h1>Thanks!</h1>
+  <div id="thanks" class='step' data-x="2000" data-scale="2">
+    <h1 class="large">Thanks!</h1>
     <br/>
     <h2><a href="https://twitter.com/roylinesuk">@roylinesuk</a></h2>
     <h2><a href="http://roylines.co.uk">http://roylines.co.uk</a></h2>
     <br/>
     <h3><a href="http://bit.ly/hiltswaltfb">(slides: http://bit.ly/hiltswaltfb)</a></h3>
   </div>
+
+
 </div><script src="js/impress.js" type="text/javascript">
 </script><script type="text/javascript">
 impress().init();

@@ -14,9 +14,12 @@ Agile manifesto was published in 2001, and by 2003 release times were down to 1 
 - releases speeded up.
 - waterfall -> agile
 
-# Agile Manifesto
-"Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."
-Agile Manifesto 2001 AD
+spend time writing code
+merge it, probably several times
+hand it over to someone to deploy
+try and roll back the deploy
+start again
+
 
 The two week release cycle was largely an artifact of scrum and two week iterations, and frankly this felt pretty good. 
 By now CI servers were an essential part of the process and Id got into the habit of measuring things: code quality and complexity, coverage.
@@ -30,6 +33,10 @@ Firstly the book is called Continuous Delivery, but actually the most enlighteni
 Continuous deployment is the logical extension of Continuous Integration covering more than just software development
 Reduce cycle time: the time it takes from deciding to make a change to having it available for users.
 
+# Agile Manifesto
+"Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."
+Agile Manifesto 2001 AD
+
 "Find ways to deliver high-quality, valuable software in an efficient, fast and reliable manner"
 - low cycle time
 - high quality
@@ -40,12 +47,21 @@ What are the steps to continuous deployment
 Steps to CD
 - Deployment must be repeatable and reliable
 - No Manual Steps
+  - 
 - If it hurts do it more often
+  - databases, devices
 - Keep everything in source control
+  - some people don't 
+  - not just code
 - It's not done until it's released
 - Measure, measure, measure
+  - coverage, quality, performance, complexity
 - Everybody is responsible for the release process
+  - project managers, business analysts, developers, testers
 - Continuously improve
+  - stagnate
+  - slippery slope
+
 
 Best Practices:
 - Build once
@@ -85,21 +101,6 @@ of valuable software.
 
 
 ##############################################
-- C -> C++ -> C# -> JS
-- In the early days things just took time - largely due to Waterfall processes
-  - Long development periods followed by long testing periods
-- Things got quicker - SCRUM and sprints
-  - Shorter and shorter release cycles - still slowed down by QA Testing.
-
-- Five Steps - Eric Reiss
-  - Continuous Integration Server
-  - Source Control Commit Check
-  - Deployment Script
-  - Alerting
-  - Root Cause Analysis (5 Whys)
-
-- Then I read this book.
-  - read the book
 
 - Who does continuous deployment?
  - http://www.quora.com/Continuous-Deployment/Which-companies-are-doing-Continuous-Delivery-Continous-Deployment-really-well

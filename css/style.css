@@ -64,21 +64,29 @@ em {
 
 h1, h2 {
 	font-weight: normal;
-}
-
-h1 {
-	font-size: 120px;
-	margin: 20px 0;
-	line-height: 130px;
-}
-
-h2 {
-  font-size: 48px;
-	font-weight: 300;
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	line-height: 72px;
 	margin: 10px 0;
+}
+
+h1 {
+  font-size: 48px;
+	font-weight: 600;
+}
+
+h1.large {
+  font-size: 160px;
+}
+
+h2 {
+  font-size: 35px;
+	font-weight: 350;
+}
+
+h3 > a {
+  font-size: 30px;
+	font-weight: 300;
 }
 
 .light {
@@ -97,6 +105,7 @@ blockquote {
 	border-bottom: 1px solid #aaa;
 	width: 1060px;
 }
+
 table {
 	width:100%;
 }
@@ -119,7 +128,12 @@ a {
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
-	font-weight:bold;
+  font-size: 40px;
+	font-weight: 500;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	line-height: 72px;
+	margin: 10px 0;
 }
 
 a:hover {
