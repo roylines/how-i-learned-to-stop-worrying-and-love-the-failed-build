@@ -119,41 +119,52 @@
 
   <div id="our-deployment-pipeline" class='step' data-x="2000" data-scale="2">
     <h1>Our (Server) Deployment Pipeline</h1>
-    <h2>Commit</h2>
-    <h2>Acceptance</h2>
-    <h2>Publish</h2>
-    <h2>Smoke</h2>
+    <h2>Commit > Acceptance > Publish > Smoke</h2>
+    </br>
+    <h2><b>Pipeline</b> - Thoughtworks Go</h2>
   </div>
 
   <div id="commit-phase" class="step" data-x="2000" data-scale="2">
-    <h1>Commit</h1>
-    <h2>Unit Tests</h2>
-    <h2>Quality Checks</h2>
+    <h2><b>Commit</b> > Acceptance > Publish > Smoke</h2>
+    </br>
+    <h2><b>Unit Tests:</b> mocha and jasmine</h2>
+    <h2><b>Quality Checks:</b> jshint</h2>
+    <h2><b>100% Coverage:</b> istanbul</h2>
   </div>
-  
+
   <div id="acceptance-phase" class="step" data-x="2000" data-scale="2">
-    <h1>Acceptance</h1>
-    <h2>Performance Tests</h2>
-    <h2>Database Tests</h2>
+    <h2>Commit > <b>Acceptance</b> > Publish > Smoke</h2>
+    </br>
+    <h2><b>Performance Tests:</b> mocha</h2>
+    <h2><b>Database Tests:</b> mocha</h2>
   </div>
-  
+
   <div id="deploy-phase" class="step" data-x="2000" data-scale="2">
-    <h1>Deploy</h1>
-    <h2>Deploys Code</h2>
-    <h2>Checks Running Version</h2>
+    <h2>Commit > Acceptance > <b>Publish</b> > Smoke</h2>
+    <h2><b>Deploys Code:</b> ec2-each</h2>
+    <h2><b>Checks Running Versions:</b> ec2-each</h2>
   </div>
-  
+
   <div id="smoke-phase" class="step" data-x="2000" data-scale="2">
-    <h1>Smoke</h1>
-    <h2>Web Service Testing</h2>
-    <h2>User Interface Testing</h2>
+    <h2>Commit > Acceptance > Publish > <b>Smoke</b></h2>
+    <h2><b>Web Service Testing:</b> mocha and request</h2>
+    <h2><b>User Interface Testing:</b> casperjs</h2>
   </div>
   
+  <div id="things" class="step" data-x="2000" data-scale="2">
+    <h1>Things I've Learnt Along The Way</h1>
+    <h2>Take the first step</h2>
+    <h2>Feature toggles</h2>
+    <h2>Chaos Monkey</h2>
+    <h2>Pre-commit hooks</h2>
+    <h2>Write deployment tests</h2>
+  </div>
+
   <div id="why-love-failed-build" class='step' data-x="2000" data-scale="2">
     <img alt="Doctor Strangelove" src="img/strglve.jpg">
     <h1>So why have I learned to stop worrying and love the failed build ?</h1>
   </div>
-  
+
   <div id="go-to-lunch" class='step' data-x="2000" data-scale="2">
     <blockquote>
       <p>Let's push to master, and go to lunch whilst it deploys to production</p>
@@ -169,7 +180,6 @@
     <br/>
     <h3><a href="http://bit.ly/hiltswaltfb">(slides: http://bit.ly/hiltswaltfb)</a></h3>
   </div>
-
 
 </div><script src="js/impress.js" type="text/javascript">
 </script><script type="text/javascript">
